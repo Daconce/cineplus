@@ -1,0 +1,22 @@
+<template name="cartelera">
+<div class="row">
+    {{#each pelicula}}
+    <div class="col-xs-6 col-md-3">
+        <div class="thumbnail">
+            <img src="{{portada}}" alt="imagen no disponible" class="img"/>
+            <div class="caption">
+              <h4>{{nombre}}</h4>
+              <p>Director: {{director}}</p>
+              <p>Duración: {{duracion}}</p>
+              <p>Género: {{genero}}</p>
+              <a href="/compra" class="btn btn-primary" id="comprar-pelicula">Comprar</a>
+              {{#if isInRole 'admin'}}
+              <button class="btn btn-sml btn-danger" id="borrar-pelicula">Elminar</button>
+              {{/if}}
+              <br>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+</template>

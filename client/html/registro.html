@@ -1,0 +1,21 @@
+<template name="registro">
+    {{#if currentUser}}
+	<h3 class="white">Ya ha ingresado al sistema. Volver a inicio.. <a href="/">Página principal</a></h3>
+	{{else}}
+    <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+    <form class="form-signup">
+		<h2 class="form-signin-heading">Crear cuenta</h2>
+		<label for="username" class="sr-only">Usuario</label>
+		<input type="text" name="username" id="username" class="form-control" placeholder="Nombre de usuario" autocomplete="off">
+		<label for="email" class="sr-only">Correo electrónico</label>
+		<input type="email" name="email" id="email" class="form-control" placeholder="Correo electrónico" autocomplete="off">
+		<label for="password" class="sr-only">Contraseña</label>
+		<input type="password" name="password" id="password" class="form-control" placeholder="Ingrese contraseña" autocomplete="off">
+		<label for="password2" class="sr-only">Repetir contraseña</label>
+		<input type="password" name="password2" id="password2" class="form-control" placeholder="Re-ingrese contraseña" autocomplete="off">
+		<button type="submit" id="login-btn" class="btn btn-lg btn-primary btn-block">Registrarse</button>
+		<p>Ya tiene una cuenta? <a href="/Ingresar">Ingresar</a></p>
+    </form>
+    </div>
+	{{/if}}
+</template>

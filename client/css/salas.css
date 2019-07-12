@@ -1,0 +1,13 @@
+#planoButacas{
+    border:1px solid grey;
+    border-radius: 3px;
+    background-color: white;
+}
+
+#planoButacas:hover{
+    background-color: lime;
+}
+
+#titulo{
+    font-family: 'Didact Gothic', sans-serif;
+}

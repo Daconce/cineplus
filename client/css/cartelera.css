@@ -1,0 +1,29 @@
+.thumbnail{
+  background-color: #0c0c0c;
+  border: 1px solid #504d4d;
+  -webkit-transition:-webkit-transform 0.1s ease-in-out 0.1s;
+}
+
+.thumbnail:hover{
+  background-color:  #222222;
+  -webkit-transform: scale(1.04);
+}
+
+.thumbnail .caption{
+  color: #fff;
+}
+
+.thumbnail .img{
+  height: 300px;
+}
+
+h4{
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+  padding-bottom: 4px;
+  background-color: rgba(255,255,255, 0.1)
+}
+
+p{
+  font-family: 'Didact Gothic', sans-serif;
+}

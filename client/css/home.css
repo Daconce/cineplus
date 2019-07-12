@@ -1,0 +1,68 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+  background-color: black;
+}
+
+#logo-pagina{
+  font-size: 3.5em;
+  font-family: fantasy;
+  color: white;
+}
+
+#menu-link-pelicula{
+  color: white;
+}
+
+#menu-link-candy{
+  color: white;
+}
+
+#menu-link-promociones{
+  color: white;
+}
+
+#menu-link-complejos{
+  color: white;
+}
+
+#menu-link-numeracion{
+  color: white;
+}
+
+#menu-link-admin{
+  color: red;
+  font-weight: bold;
+}
+.carousel-inner > .item,
+.carousel-inner > .item > img> a {
+    width: 90%;
+    height: auto;
+    /*height: 450px;*/
+    margin: auto;
+
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+#myCarousel{
+  background-color: black;
+}
+
+#menu-link-pelicula:hover{
+  background-color: blue;
+}
+
+#menu-link-candy:hover{
+  background-color: blue;
+}
+
+#menu-link-promociones:hover{
+  background-color: blue;
+}
+
+#menu-link-complejos:hover{
+  background-color: blue;
+}

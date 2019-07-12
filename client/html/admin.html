@@ -1,0 +1,62 @@
+<template name="admin">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3" id="gestionCartelera">
+                    <form class="adminPeliculas">
+                        <h4>GESTIÓN DE CARTELERA</h4>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-md-7 col-sm-7 col-xs-7">
+                            <label for="pelicula">Película:</label>
+                            <input type="text" name="pelicula" class="form-control" placeholder="película">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-7 col-sm-7 col-xs-7">
+                            <label for="director">Director:</label>
+                            <input type="text" name="director" class="form-control" placeholder="director">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-7 col-sm-7 col-xs-7">
+                            <label for="genero">Género:</label>
+                                <select class="form-control" name="genero">
+                                    <option selected>Elegir...</option>
+                                    <option>Terror</option>
+                                    <option>Drama</option>
+                                    <option>Aventuras</option>
+                                    <option>Animación</option>
+                                    <option>Biografía</option>
+                                    <option>Comedia</option>
+                                    <option>Musical</option>
+                                    <option>Ciencia Ficción</option>
+                                    <option>Fantasía</option>
+                                    <option>Thriller</option>
+                                    <option>Acción</option>
+                                    <option>Documental</option>
+                                </select>
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-7 col-sm-7 col-xs-7">
+                            <label for="duracion">Duración:</label>
+                            <input type="number" min="0" step="1" name="duracion" class="form-control" placeholder="duración en minutos"><br>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                                    <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                                    <div>
+                                      <span class="btn btn-default btn-file"><span class="fileinput-new">Seleccionar portada</span><span class="fileinput-exists">Cambiar</span><input type="file" name="portada"></span>
+                                      <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Eliminar</a>
+                                    </div>
+                            </div>
+
+                          </div>
+                        <input type="submit" class="btn btn-success" value="Publicar película">
+                    </form>
+                    <br>
+                    <br>
+        </div>
+    </div>
+    {{> cartelera}}
+</template>

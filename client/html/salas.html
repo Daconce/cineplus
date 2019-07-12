@@ -1,0 +1,22 @@
+<template name="salas">
+<div class="col-xs-12 col-xs-offset-1 col-md-6 col-md-offset-4">
+    {{#each salas}}
+    <h3 id="titulo">{{nombre}}</h3>
+    <br>
+        {{#each asientos}}
+            <div class="row">
+                {{#each this}}
+                    {{#if this 1}}
+                    <canvas id="planoButacas" width="20" height="20" style="background-color: lime;"></canvas>
+                    {{else}}
+                    <canvas id="planoButacas" width="20" height="20"></canvas>
+                    {{/if}}
+                {{/each}}
+            </div>
+        {{/each}}
+        <br>
+        <br>
+    {{/each}}
+  
+</div>
+</template>

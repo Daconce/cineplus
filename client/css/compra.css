@@ -1,0 +1,35 @@
+#compraForm{
+    border: 2px solid gray;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 40px;
+}
+
+/*#asientos_btn button{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+}*/
+
+.butaca{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 9px 9px 4px 4px;
+}
+
+#asientos_btn button:hover{
+    background-color: lime;
+}
+
+.seleccionado{
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+}
+
+.deseleccionado{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+}
